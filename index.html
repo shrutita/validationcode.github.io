@@ -27,7 +27,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 <body>
-	<div class="container">
+	<div class="container" style="border:2px solid blue;align:center">
 		<div class="row">
 			<div class="col-md-6">
 <form>
@@ -41,7 +41,7 @@
 		<td >Password :</td>
 
 		<br><br>
-		<td><input type="password" id="pass"></td><span id="passtext"></span><br><br><button class="btn btn-success" id="showhidebtn" onclick="showhidepassword()">Show Password</button>
+		<td><input type="password" id="pass"></td><span id="passtext"></span><br><br>
 		<br><br>
 	</tr>
 	<tr>
@@ -101,20 +101,7 @@
 		
 	});
         
-        function showhidepassword()
-        {
-		let type = $("#pass").attr('type');
-		if(type=='password')
-		{
-			$('#pass').attr('type','text');
-			$('#showhidebtn').html("<span bgcolor='blue'>Hide Password</span>");
-		}
-		else
-		{
-			$('#pass').attr('type','password');
-			$('#showhidebtn').html("<span bgcolor='blue'>Show Password</span>");
-		}
-	}
+       
 	
 	function validateemail()
 	{
